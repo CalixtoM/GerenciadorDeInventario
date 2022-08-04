@@ -26,7 +26,7 @@ public class ProductTester {
 		System.out.println("Digite o valor: ");
 		valor = scanProd.nextDouble();
 		Produto p2 = new Produto(nome, cod, qnt, valor);
-		System.out.println(p1.getNome());
+		System.out.println(p1);
 		
 	}
 

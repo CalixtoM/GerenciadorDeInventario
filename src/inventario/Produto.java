@@ -61,4 +61,10 @@ public class Produto {
 	public void setPreco(double price) {
 		preco = price;
 	}
+	
+	@Override
+	public String toString() {
+		return "Nome produto: " + this.nome + ", Número: " + this.itemNumero +
+			   ", Unidades: " + this.unidades + ", Preço: " + this.preco;
+	}
 }
