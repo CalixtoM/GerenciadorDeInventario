@@ -15,7 +15,9 @@ public class ProductTester {
 		int qnt = scanProd.nextInt();
 		System.out.println("Digite o valor: ");
 		double valor = scanProd.nextDouble();
-		Produto p1 = new Produto(nome, cod, qnt, valor);
+		System.out.println("Esse item estará ativo? \n 1 - Sim, 2 - Não");
+		int atividade = scanProd.nextInt();
+		Produto p1 = new Produto(nome, cod, qnt, valor, atividade);
 		scanProd.nextLine();
 		System.out.println("Digite o nome do produto: ");
 		nome = scanProd.nextLine();
@@ -25,8 +27,10 @@ public class ProductTester {
 		qnt = scanProd.nextInt();
 		System.out.println("Digite o valor: ");
 		valor = scanProd.nextDouble();
-		Produto p2 = new Produto(nome, cod, qnt, valor);
-		System.out.println(p1);
+		System.out.println("Esse item estará ativo? \n 1 - Sim, 2 - Não");
+		atividade = scanProd.nextInt();
+		Produto p2 = new Produto(nome, cod, qnt, valor, atividade);
+		System.out.println(p1+"\n "+ p2);
 		
 	}
 
