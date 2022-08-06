@@ -30,7 +30,7 @@ public class ProductTester {
 		System.out.println("Esse item estará ativo? \n 1 - Sim, 2 - Não");
 		atividade = scanProd.nextInt();
 		Produto p2 = new Produto(nome, cod, qnt, valor, atividade);
-		System.out.println(p1+"\n "+ p2);
+		System.out.println(p1+"\n \n"+ p2);
 		
 	}
 

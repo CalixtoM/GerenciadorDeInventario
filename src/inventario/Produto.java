@@ -81,10 +81,15 @@ public class Produto {
 		}
 	}
 	
+	public double setValorInventario(){
+		double total = this.getPreco() * this.getUnidade();
+		return total;
+	}
+	
 	@Override
 	public String toString() {
-		return "Nome produto: " + this.nome + ", Número: " + this.itemNumero +
-			   ", Unidades: " + this.unidades + ", Preço: " + this.preco + 
-			   ", Ativo: " + ((this.ativo == true) ? "Ativo" : "Descontinuado");
+		return "Nome produto: " + this.nome + "\n Número: " + this.itemNumero +
+			   "\n Unidades: " + this.unidades + "\n Preço: " + this.preco + "\n Valor do Estoque: " + setValorInventario() +
+			   "\n Ativo: " + ((this.ativo == true) ? "Ativo" : "Descontinuado");
 	}
 }
